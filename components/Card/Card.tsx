@@ -15,7 +15,7 @@ interface ICard {
   }[];
 }
 
-const Component = ({ color, name, pokemonId, id, types }: ICard) => (
+const Card = ({ color, name, pokemonId, id, types }: ICard) => (
   <Link href={`/${name}`}>
     <Styled.Container color={color}>
       <Images
@@ -34,4 +34,4 @@ const Component = ({ color, name, pokemonId, id, types }: ICard) => (
   </Link>
 );
 
-export default Component;
+export default Card;
